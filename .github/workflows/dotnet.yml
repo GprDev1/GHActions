@@ -40,7 +40,7 @@ jobs:
           path: ${{env.DOTNET_ROOT}}/myapp 
           
     - name: Install EntityFrameworkCore Tools
-      run: |
+      run: 
             dotnet -d new tool-manifest
             dotnet tool install dotnet-ef
           
